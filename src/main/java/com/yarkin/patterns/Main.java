@@ -8,9 +8,14 @@ public class Main
      * Entry point
      *
      * @param args
-     *      -p - pattern name
+     *      -p "pattern name"
      *      List of supported pattern names:
      *      - strategy
+     *      - observer
+     *      - decorator
+     *      - abstract factory
+     *      - singleton
+     *      - command
      */
     public static void main(String[] args)
     {
@@ -28,7 +33,9 @@ public class Main
             throw new IllegalArgumentException("Missing argument of -p");
         }
 
-        Pattern pattern = PatterFactory.get(args[pattenNameIndex]);
+        Pattern pattern = PatternFactory.get(args[pattenNameIndex]);
+        // Pattern pattern = PatterFactory.getRandom();
+
         pattern.run();
     }
 }
