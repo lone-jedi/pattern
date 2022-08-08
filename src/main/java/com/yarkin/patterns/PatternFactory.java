@@ -1,6 +1,7 @@
 package com.yarkin.patterns;
 
 import com.yarkin.patterns.abstractfactory.AbstractFactoryPattern;
+import com.yarkin.patterns.adapter.AdapterPattern;
 import com.yarkin.patterns.command.CommandPattern;
 import com.yarkin.patterns.decorator.DecoratorPattern;
 import com.yarkin.patterns.observer.ObserverPattern;
@@ -38,6 +39,8 @@ public class PatternFactory
                 return new SingletonPattern();
             case "COMMAND":
                 return new CommandPattern();
+            case "ADAPTER":
+                return new AdapterPattern();
         }
 
         throw new IllegalArgumentException("Patten " + patternName + " does not exist");

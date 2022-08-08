@@ -16,6 +16,7 @@ public class Main
      *      - abstract factory
      *      - singleton
      *      - command
+     *      - adapter
      */
     public static void main(String[] args)
     {
