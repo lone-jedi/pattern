@@ -5,6 +5,7 @@ import com.yarkin.patterns.adapter.AdapterPattern;
 import com.yarkin.patterns.command.CommandPattern;
 import com.yarkin.patterns.decorator.DecoratorPattern;
 import com.yarkin.patterns.observer.ObserverPattern;
+import com.yarkin.patterns.proxy.ProxyPattern;
 import com.yarkin.patterns.singleton.SingletonPattern;
 import com.yarkin.patterns.strategy.StrategyPattern;
 
@@ -41,6 +42,8 @@ public class PatternFactory
                 return new CommandPattern();
             case "ADAPTER":
                 return new AdapterPattern();
+            case "PROXY":
+                return new ProxyPattern();
         }
 
         throw new IllegalArgumentException("Patten " + patternName + " does not exist");

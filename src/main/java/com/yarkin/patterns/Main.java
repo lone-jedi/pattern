@@ -17,6 +17,7 @@ public class Main
      *      - singleton
      *      - command
      *      - adapter
+     *      - proxy
      */
     public static void main(String[] args)
     {
