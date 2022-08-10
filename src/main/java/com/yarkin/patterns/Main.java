@@ -18,6 +18,7 @@ public class Main
      *      - command
      *      - adapter
      *      - proxy
+     *      - bridge
      */
     public static void main(String[] args)
     {

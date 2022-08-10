@@ -2,6 +2,7 @@ package com.yarkin.patterns;
 
 import com.yarkin.patterns.abstractfactory.AbstractFactoryPattern;
 import com.yarkin.patterns.adapter.AdapterPattern;
+import com.yarkin.patterns.bridge.BridgePattern;
 import com.yarkin.patterns.command.CommandPattern;
 import com.yarkin.patterns.decorator.DecoratorPattern;
 import com.yarkin.patterns.observer.ObserverPattern;
@@ -44,6 +45,8 @@ public class PatternFactory
                 return new AdapterPattern();
             case "PROXY":
                 return new ProxyPattern();
+            case "BRIDGE":
+                return new BridgePattern();
         }
 
         throw new IllegalArgumentException("Patten " + patternName + " does not exist");
