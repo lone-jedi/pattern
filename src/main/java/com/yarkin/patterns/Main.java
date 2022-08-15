@@ -19,6 +19,8 @@ public class Main
      *      - adapter
      *      - proxy
      *      - bridge
+     *      - template method
+     *      - composite
      */
     public static void main(String[] args)
     {

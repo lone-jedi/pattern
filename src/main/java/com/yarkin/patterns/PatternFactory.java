@@ -4,11 +4,13 @@ import com.yarkin.patterns.abstractfactory.AbstractFactoryPattern;
 import com.yarkin.patterns.adapter.AdapterPattern;
 import com.yarkin.patterns.bridge.BridgePattern;
 import com.yarkin.patterns.command.CommandPattern;
+import com.yarkin.patterns.composite.CompositePattern;
 import com.yarkin.patterns.decorator.DecoratorPattern;
 import com.yarkin.patterns.observer.ObserverPattern;
 import com.yarkin.patterns.proxy.ProxyPattern;
 import com.yarkin.patterns.singleton.SingletonPattern;
 import com.yarkin.patterns.strategy.StrategyPattern;
+import com.yarkin.patterns.templatemethod.TemplateMethodPattern;
 
 import java.util.List;
 import java.util.Locale;
@@ -47,6 +49,10 @@ public class PatternFactory
                 return new ProxyPattern();
             case "BRIDGE":
                 return new BridgePattern();
+            case "TEMPLATE METHOD":
+                return new TemplateMethodPattern();
+            case "COMPOSITE":
+                return new CompositePattern();
         }
 
         throw new IllegalArgumentException("Patten " + patternName + " does not exist");
