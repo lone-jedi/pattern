@@ -6,6 +6,7 @@ import com.yarkin.patterns.bridge.BridgePattern;
 import com.yarkin.patterns.command.CommandPattern;
 import com.yarkin.patterns.composite.CompositePattern;
 import com.yarkin.patterns.decorator.DecoratorPattern;
+import com.yarkin.patterns.iterator.IteratorPattern;
 import com.yarkin.patterns.observer.ObserverPattern;
 import com.yarkin.patterns.proxy.ProxyPattern;
 import com.yarkin.patterns.singleton.SingletonPattern;
@@ -53,6 +54,8 @@ public class PatternFactory
                 return new TemplateMethodPattern();
             case "COMPOSITE":
                 return new CompositePattern();
+            case "ITERATOR":
+                return new IteratorPattern();
         }
 
         throw new IllegalArgumentException("Patten " + patternName + " does not exist");

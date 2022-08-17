@@ -21,6 +21,7 @@ public class Main
      *      - bridge
      *      - template method
      *      - composite
+     *      - iterator
      */
     public static void main(String[] args)
     {
