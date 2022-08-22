@@ -10,6 +10,7 @@ import com.yarkin.patterns.iterator.IteratorPattern;
 import com.yarkin.patterns.observer.ObserverPattern;
 import com.yarkin.patterns.proxy.ProxyPattern;
 import com.yarkin.patterns.singleton.SingletonPattern;
+import com.yarkin.patterns.state.StatePattern;
 import com.yarkin.patterns.strategy.StrategyPattern;
 import com.yarkin.patterns.templatemethod.TemplateMethodPattern;
 
@@ -56,6 +57,8 @@ public class PatternFactory
                 return new CompositePattern();
             case "ITERATOR":
                 return new IteratorPattern();
+            case "STATE":
+                return new StatePattern();
         }
 
         throw new IllegalArgumentException("Patten " + patternName + " does not exist");

@@ -22,6 +22,7 @@ public class Main
      *      - template method
      *      - composite
      *      - iterator
+     *      - state
      */
     public static void main(String[] args)
     {
